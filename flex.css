@@ -1,0 +1,133 @@
+.holyGrail {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    min-width: 731px;
+}
+
+.holyGrail header, .holyGrail footer {
+    flex: none;
+    background: #000;
+    color: #fff;
+    text-align: center;
+}
+
+.holyGrail-body {
+    display: flex;
+    width: 100%;
+}
+
+.holyGrail-content {
+    background: #ddd;
+    color: #fff;
+    display: flex;
+    flex: 3;
+    flex-wrap: wrap;
+
+    text-align: center;
+
+    -webkit-box-orient: horizontal;
+    -moz-box-orient: horizontal;
+    box-orient: horizontal;
+    flex-direction: row;
+
+    -webkit-box-pack: center;
+    -moz-box-pack: center;
+    box-pack: center;
+    justify-content: center;
+
+    -webkit-box-align: center;
+    -moz-box-align: center;
+    box-align: center;
+    align-items: center;
+
+    padding-bottom: 1em;
+}
+
+.holyGrail-content img {
+    max-width: 50%;
+    min-width: 100px;
+}
+
+.holyGrail-content h1 {
+    text-align: center;
+}
+
+.holyGrail-nav {
+    order: -1;
+}
+
+.holyGrail-nav, .holyGrail-ads {
+    background: #aaa;
+    min-width: 150px;
+    max-width: 150px;
+    flex-wrap: wrap;
+}
+
+.holyGrail-nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.holyGrail-nav a {
+    text-decoration: none;
+    color: #fff;
+    display: flex;
+    padding: 10px;
+    text-align: center;
+    justify-content: space-around;
+}
+
+.holyGrail-nav a:hover {
+    background-color: #555;
+}
+
+.holyGrail-ads ul {
+    list-style-type: none;
+    //margin-top: 10rem;
+    padding: 10%;
+    text-align: center;
+}
+
+.holyGrail-ads li {
+    padding-left: 10px;
+}
+
+@media (max-width: 731px) {
+    .holyGrail {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .holyGrail header {
+        display: block;
+
+    }
+
+    .holyGrail-body {
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+
+    .holyGrail-content {
+        flex: 1;
+    }
+
+    .holyGrail-content img {
+        max-width: 50%;
+        min-width: 100px;
+    }
+
+    .holyGrail-nav, .holyGrail-ads {
+        min-width: 100%;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+
+    .holyGrail-nav ul, .holyGrail-ads ul {
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+
+}
